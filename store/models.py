@@ -1,16 +1,25 @@
 from django.db import models
 
-# Create your models here.
-ARTISTS = {
-  'francis-cabrel': {'name': 'Francis Cabrel'},
-  'lej': {'name': 'Elijay'},
-  'rosana': {'name': 'Rosana'},
-  'maria-dolores-pradera': {'name': 'María Dolores Pradera'},
-}
+
+class Artist(models.Model):
+  name = models.CharField(max_length=200, unique=True)
+
+class Contact(models.Model):
+  email = models.EmailField(max_length=200)
+  name = models.CharField(max_length=200)
+
+class Album(models.Model):
+  create_at = models.DateTimeField(auto_now_add=True)
+  reference = models.IntegerField(null=True)
+  title = models.CharField(max_length=200, unique=True)
+  available = models.BooleanField(default=True)
+  picture = models.URLField()
+  artists = models.ManyToManyField(Artist, related_name='albums', blank=True)
+
+class Booking(models.Model):
+  create_at = models.DateTimeField(auto_now_add=True)
+  contacted = models.BooleanField(default=False)
+  album = models.OneToOneField(Album, on_delete=models.CASCADE)
+  contact = models.ForeignKey(Contact, on_delete=models.CASCADE)
 
 
-ALBUMS = [
-  {'name': 'Sarbacane', 'artists': [ARTISTS['francis-cabrel']]},
-  {'name': 'La Dalle', 'artists': [ARTISTS['lej']]},
-  {'name': 'Luna Nueva', 'artists': [ARTISTS['rosana'], ARTISTS['maria-dolores-pradera']]}
-]
