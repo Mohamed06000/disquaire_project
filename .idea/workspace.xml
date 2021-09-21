@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="4cb66013-8574-4836-8591-921d0c1977b7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/store/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/store/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/store/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/store/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,8 +31,8 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../COMPTA-PROJECT" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -46,6 +48,7 @@
       <workItem from="1627404954481" duration="8978000" />
       <workItem from="1631804079174" duration="984000" />
       <workItem from="1631963658276" duration="223000" />
+      <workItem from="1632243094508" duration="13624000" />
     </task>
     <servers />
   </component>
@@ -53,14 +56,18 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="579" y="185" key="FileChooserDialogImpl" timestamp="1631963881974">
+    <state x="254" y="86" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1632243432103">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="579" y="185" key="FileChooserDialogImpl/0.0.1600.860@0.0.1600.860" timestamp="1631963881974" />
-    <state x="301" y="73" key="SettingsEditor" timestamp="1627409266004">
+    <state x="254" y="86" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1600.860@0.0.1600.860" timestamp="1632243432103" />
+    <state x="579" y="185" key="FileChooserDialogImpl" timestamp="1632243424159">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="301" y="73" key="SettingsEditor/0.0.1600.860@0.0.1600.860" timestamp="1627409266004" />
+    <state x="579" y="185" key="FileChooserDialogImpl/0.0.1600.860@0.0.1600.860" timestamp="1632243424159" />
+    <state x="301" y="73" key="SettingsEditor" timestamp="1632243174994">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="301" y="73" key="SettingsEditor/0.0.1600.860@0.0.1600.860" timestamp="1632243174994" />
     <state x="496" y="255" key="com.intellij.ide.util.TipDialog" timestamp="1631963666255">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
