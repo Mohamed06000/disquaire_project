@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4cb66013-8574-4836-8591-921d0c1977b7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/store/templates/store/base.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/store/templates/store/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/store/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/store/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/store/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/store/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -15,12 +16,14 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="JupyterTrust" id="262c1280-5eee-4d34-ad4f-9a78d43203e0" />
   <component name="ProjectId" id="1vuFrFxXnMrued8WuEwIWvYX5TO" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -29,9 +32,10 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/OC_Engineer_AI/project_4" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="SvnConfiguration">
@@ -48,7 +52,7 @@
       <workItem from="1627404954481" duration="8978000" />
       <workItem from="1631804079174" duration="984000" />
       <workItem from="1631963658276" duration="223000" />
-      <workItem from="1632243094508" duration="13624000" />
+      <workItem from="1632243094508" duration="16835000" />
     </task>
     <servers />
   </component>
@@ -60,10 +64,10 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="254" y="86" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1600.860@0.0.1600.860" timestamp="1632243432103" />
-    <state x="579" y="185" key="FileChooserDialogImpl" timestamp="1632243424159">
+    <state x="579" y="185" key="FileChooserDialogImpl" timestamp="1632327961688">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="579" y="185" key="FileChooserDialogImpl/0.0.1600.860@0.0.1600.860" timestamp="1632243424159" />
+    <state x="579" y="185" key="FileChooserDialogImpl/0.0.1600.860@0.0.1600.860" timestamp="1632327961688" />
     <state x="301" y="73" key="SettingsEditor" timestamp="1632243174994">
       <screen x="0" y="0" width="1600" height="860" />
     </state>

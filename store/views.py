@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from .models import Album, Artist, Contact, Booking
+from django.template import loader
 
 
 def index(request):
@@ -11,7 +12,8 @@ def index(request):
     # because it's now an attribute.
     formatted_albums = ["<li>{}</li>".format(album.title) for album in albums]
     message = """<ul>{}</ul>""".format("\n".join(formatted_albums))
-    return HttpResponse(message)
+    template = loader.get_template('store/base.html')
+    return HttpResponse(template.render(request=request))
 
 
 def listing(request):
