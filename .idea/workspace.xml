@@ -2,9 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4cb66013-8574-4836-8591-921d0c1977b7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/store/templates/store/base.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/store/templates/store/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/store/templates/store/detail.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/store/templates/store/list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/store/templates/store/listing.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/store/templates/store/search.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/disquaire_project/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/disquaire_project/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/store/templates/store/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/store/templates/store/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/store/templates/store/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/store/templates/store/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/store/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/store/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/store/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/store/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -52,7 +58,7 @@
       <workItem from="1627404954481" duration="8978000" />
       <workItem from="1631804079174" duration="984000" />
       <workItem from="1631963658276" duration="223000" />
-      <workItem from="1632243094508" duration="16835000" />
+      <workItem from="1632243094508" duration="21912000" />
     </task>
     <servers />
   </component>
@@ -64,6 +70,10 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="254" y="86" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1600.860@0.0.1600.860" timestamp="1632243432103" />
+    <state x="577" y="234" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1632587029698">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="577" y="234" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1600.860@0.0.1600.860" timestamp="1632587029698" />
     <state x="579" y="185" key="FileChooserDialogImpl" timestamp="1632327961688">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
