@@ -1,7 +1,10 @@
-from django.shortcuts import render
 from django.http import HttpResponse
+
+from .forms.forms import ContactForm, ParagraphErrorList
 from .models import Album, Artist, Contact, Booking
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
+from django.core.paginator import Paginator, PageNotAnInteger, EmptyPage
+
 
 def index(request):
     # request albums
@@ -20,25 +23,82 @@ def index(request):
 
 
 def listing(request):
-    albums = Album.objects.filter(available=True)
+    albums_list = Album.objects.filter(available=True)
+
+    # Slice pages
+    paginator = Paginator(albums_list, 9)
+    # Get current page number
+    page = request.GET.get('page')
+    # Return only this page albums and not others
+    try:
+        albums = paginator.page(page)
+    except PageNotAnInteger:
+        # If page is not an integer, deliver first page.
+        albums = paginator.page(1)
+    except EmptyPage:
+        # If page is out of range (e.g. 9999), deliver last page of results.
+        albums = paginator.page(paginator.num_pages)
+
     context = {
-        'albums': albums
+        'albums': albums,
+        'paginate': True
     }
 
     return render(request, 'store/listing.html', context)
 
 
 def detail(request, album_id):
-    album = Album.objects.get(pk=album_id)
+    album = get_object_or_404(Album, pk=album_id)
     artists = [artist.name for artist in album.artists.all()]
     artists_name = " ".join(artists)
+
     context = {
         'album_title': album.title,
         'artists_name': artists_name,
         'album_id': album.id,
-        'thumbnail': album.picture
+        'thumbnail': album.picture,
     }
 
+    if request.method == 'POST':
+        form = ContactForm(request.POST, error_class=ParagraphErrorList)
+
+        if form.is_valid():
+            # Form is correct.
+            # We can proceed to booking.
+            email = form.cleaned_data['email']
+            name = form.cleaned_data['name']
+
+            contact = Contact.objects.filter(email=email)
+            if not contact.exists():
+                # If a contact is not registered, create a new one.
+                contact = Contact.objects.create(
+                    email=email,
+                    name=name
+                )
+
+            # If no album matches the id, it means the form must have been tweaked
+            # so returning a 404 is the best solution.
+            album = get_object_or_404(Album, id=album_id)
+            booking = Booking.objects.create(
+                contact=contact,
+                album=album
+            )
+
+            # Make sure no one can book the album again.
+            album.available = False
+            album.save()
+            context = {
+                'album_title': album.title
+            }
+            return render(request, 'store/merci.html', context)
+
+        else:
+            context['errors'] = form.errors.items()
+
+    else:
+        form = ContactForm()
+
+    context['form'] = form
     return render(request, 'store/detail.html', context)
 
 

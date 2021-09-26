@@ -2,15 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4cb66013-8574-4836-8591-921d0c1977b7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/store/templates/store/detail.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/store/templates/store/list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/store/templates/store/listing.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/store/templates/store/search.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/store/forms/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/store/templates/404.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/store/templates/500.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/store/templates/store/merci.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/store/templates/store/search_form.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/disquaire_project/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/disquaire_project/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/store/templates/store/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/store/templates/store/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/store/templates/store/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/store/templates/store/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/store/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/store/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/disquaire_project/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/disquaire_project/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/store/templates/store/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/store/templates/store/detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/store/templates/store/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/store/templates/store/list.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/store/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/store/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -21,8 +21,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -44,6 +44,11 @@
     <property name="last_opened_file_path" value="$USER_HOME$/Desktop/OC_Engineer_AI/project_4" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Toufik\Documents\Mohamed\DJANGO\disquaire_project\store\templates" />
+    </key>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -58,7 +63,7 @@
       <workItem from="1627404954481" duration="8978000" />
       <workItem from="1631804079174" duration="984000" />
       <workItem from="1631963658276" duration="223000" />
-      <workItem from="1632243094508" duration="21912000" />
+      <workItem from="1632243094508" duration="31879000" />
     </task>
     <servers />
   </component>
